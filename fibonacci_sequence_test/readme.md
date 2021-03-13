@@ -2,15 +2,15 @@
 Fibonacci sequance of `30`. More about this sequance: https://en.wikipedia.org/wiki/Fibonacci_number
 
 ### Python
-Time: `217.62 ms`
+Time: `217.62 ms` <br>
 Command: `python fibonacci_sequence_test/fibonacci_sequence_test.py`
 
 ### PyPy
-Time: `27.165 ms`
+Time: `27.165 ms` <br>
 Command: `pypy3 fibonacci_sequence_test/fibonacci_sequence_test.py`
 
 ### C++
-Time: `5.973 ms`
+Time: `5.973 ms` <br>
 Command: `g++ fibonacci_sequence_test/fibonacci_sequence_test.cpp -o fibonacci_sequence_test/fst.out && fibonacci_sequence_test/fst.out`
 
 ## Results
