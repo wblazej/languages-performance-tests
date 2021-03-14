@@ -13,5 +13,9 @@ Command: `pypy3 outputting/outputting.py`
 Time: `18.182 ms` <br>
 Command: `g++ outputting/outputting.cpp -o outputting/o.out && ./outputting/o.out`
 
+### JavaScript (node)
+Time: `135.018 ms` <br>
+Command: `node outputting/outputting.js`
+
 ## Results
 The fastest one: **C++**
