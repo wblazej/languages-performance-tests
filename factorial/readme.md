@@ -12,3 +12,6 @@ Command: `pypy3 factorial/factorial.py`
 ### C++
 Time: `7.38 ms` <br>
 Command: `g++ factorial/factorial.cpp -o factorial/f.out && ./factorial/f.out`
+
+## Results
+The fastest one: **C++**
