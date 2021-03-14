@@ -13,5 +13,9 @@ Command: `pypy3 empty_file/empty_file.py`
 Time: `0.001 ms`<br>
 Command: `g++ empty_file/empty_file.cpp -o empty_file/ef.out && ./empty_file/ef.out`
 
+### JavaScript
+Time: `0.013 ms` <br>
+Command: `node empty_file/empty_file.js`
+
 ## Results
 The fastest one: **C++**
