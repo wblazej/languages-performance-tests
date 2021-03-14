@@ -13,5 +13,9 @@ Command: `pypy3 fibonacci_sequence/fibonacci_sequence.py`
 Time: `5.973 ms` <br>
 Command: `g++ fibonacci_sequence/fibonacci_sequence.cpp -o fibonacci_sequence/fs.out && fibonacci_sequence/fs.out`
 
+### JavaScript (node)
+Time: `10.764 ms` <br>
+Command: `node fibonacci_sequence/fibonacci_sequence.js`
+
 ## Results
 The fastest one: **C++**
