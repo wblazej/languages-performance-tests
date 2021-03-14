@@ -13,5 +13,9 @@ Command: `pypy3 random_numbers/random_numbers.py`
 Time: `26.019 ms` <br>
 Command: `g++ random_numbers/random_numbers.cpp -o random_numbers/rn.out && ./random_numbers/rn.out`
 
+### JavaScript (node)
+Time: `27.188 ms` <br>
+Command: `node random_numbers/random_numbers.js`
+
 ## Results
 The fastest one: **C++**
