@@ -13,5 +13,9 @@ Command: `pypy3 factorial/factorial.py`
 Time: `7.38 ms` <br>
 Command: `g++ factorial/factorial.cpp -o factorial/f.out && ./factorial/f.out`
 
+### JavaScript (node)
+Time: `19.276 ms` <br>
+Command: `node factorial/factorial.js`
+
 ## Results
 The fastest one: **C++**
