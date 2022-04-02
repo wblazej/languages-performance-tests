@@ -1,4 +1,5 @@
 import argparse
+from colorama import Fore
 from src.config import Config
 from src.bin_path_not_found import BinPathNotFound
 from src.get_paths import get_paths
@@ -22,6 +23,6 @@ if __name__ == "__main__":
     results = run_tests(tests, paths, k=args.k)
 
     for test_name, test_results in results.items():
-        print(f'\n-- Results for {test_name} --\n')
+        print(f'\n\n{Fore.CYAN}-- Results for {test_name} --{Fore.RESET}\n')
         for i, (lang, result) in enumerate(test_results.items()):
             print('{}. {:12} {} ms'.format(i + 1, lang, result))

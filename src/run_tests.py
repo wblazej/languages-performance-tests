@@ -1,23 +1,30 @@
 import subprocess
 from src.get_commands import get_commands
+import sys
+from colorama import Fore
 
+
+def write_dots(count: int):
+    sys.stdout.write('\r')
+    sys.stdout.flush()
+    sys.stdout.write('.' * count)
+    sys.stdout.flush()
 
 def run_tests(tests: list[str], interpreters_paths: list[str], k: int):
     tests_results = {}
 
     for test_name in tests:
-        print(f'\n> Running tests for {test_name}')
+        print(f'\n\n\n{Fore.CYAN}> Running tests for {test_name}{Fore.RESET}')
         results = {}
 
         for c in get_commands(test_name, interpreters_paths):
-            print(f'\nTesting {c["lang"]}')
+            print(f'\n\nTesting {c["lang"]}')
             attempts = []
 
             for i in range(k):
                 out = subprocess.run(c['command'], capture_output=True, shell=True)
-                exec_time = float(out.stdout.decode().strip())
-                attempts.append(exec_time)
-                print(f'Test {i + 1}: {exec_time} ms')
+                attempts.append(float(out.stdout.decode().strip()))
+                write_dots(i + 1)
 
             results[c['lang']] = round(sum(attempts) / len(attempts), 3)
 
