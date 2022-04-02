@@ -9,13 +9,14 @@ from src.run_tests import run_tests
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('-k', help=Config.K_HELP, type=int, required=False, default=10)
+    parser.add_argument('--ignore', help=Config.IGNORE_HELP, action='store_true')
     args = parser.parse_args()
 
-    interpreters_needed = ['python3', 'node', 'npx', 'g++', 'gcc', 'ruby', 'php', 'java']
+    interpreters_needed = ['python3', 'node', 'npx', 'g++', 'gcc', 'ruby', 'php', 'java', 'pypy3']
     tests = ['random_numbers', 'fibonacci_sequence', 'factorial']
 
     try:
-        paths = get_paths(interpreters_needed)
+        paths = get_paths(interpreters_needed, ignore_missing=args.ignore)
     except BinPathNotFound as e:
         print(Config.BIN_PATH_NOT_FOUND_ERROR.replace('interpreter_name', e.interpreter_name))
         exit(1)
