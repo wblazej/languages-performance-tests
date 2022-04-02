@@ -11,7 +11,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     interpreters_needed = ['python3', 'node', 'npx', 'g++', 'gcc', 'ruby', 'php', 'java']
-    tests = ['random_numbers', 'factorial']
+    tests = ['random_numbers', 'fibonacci_sequence', 'factorial']
 
     try:
         paths = get_paths(interpreters_needed)
