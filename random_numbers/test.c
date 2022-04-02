@@ -3,17 +3,14 @@
 #include <time.h>
 #include <math.h>
 
-int* test() {
+void test() {
     srand(time(NULL));
     
     int n = 1000000;
     int *numbers = malloc(sizeof * numbers * n);
 
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++)
         numbers[i] = rand() % 1000000 + 1;
-    }
-
-    return numbers;
 }
 
 int main() {

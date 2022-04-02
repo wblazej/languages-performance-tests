@@ -2,14 +2,12 @@
 #include <time.h>
 #include <vector>
 
-std::vector<int> test() {
+void test() {
     int n = 1000000;
     std::vector<int> arr;
 
     for (int i = 0; i < n; i++)
         arr.push_back(rand() % n + 1);
-
-    return arr;
 }
 
 int main() {

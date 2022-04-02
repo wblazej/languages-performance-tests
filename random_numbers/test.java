@@ -1,13 +1,10 @@
 class Main {
-    public static int[] test() {
+    public static void test() {
         int n = 1000000;
         int[] randomNumbers = new int[n];
         
-        for (int i = 0; i < randomNumbers.length; i++) {
+        for (int i = 0; i < randomNumbers.length; i++)
             randomNumbers[i] = (int) (Math.random() * n) + 1;
-        }
-
-        return randomNumbers;
     }
 
     public static void main(String[] args) {

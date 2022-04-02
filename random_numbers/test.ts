@@ -6,8 +6,6 @@ const test = () => {
 
     for (let i = 0; i < n; i++)
         numbers.push(Math.floor(Math.random() * n) + 1)
-
-    return numbers
 }
 
 let start = performance.now()
