@@ -25,4 +25,7 @@ def get_commands(name: str, interpreters_paths: dict[str, str]):
     if interpreters_paths['java'] is not None:
         commands.append({'lang': 'Java', 'command': f'{interpreters_paths["java"]} {name}/test.java'})
 
+    if interpreters_paths['pypy3'] is not None:
+        commands.append({'lang': 'PyPy3', 'command': f'{interpreters_paths["pypy3"]} {name}/test.py'})
+
     return commands
