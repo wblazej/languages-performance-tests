@@ -31,6 +31,12 @@ python3 main.py
 - `fibonacci_sequence` - calculates [Fibonacci Sequence](https://en.wikipedia.org/wiki/Fibonacci_number) for `30`
 - `factorial` - calculates [Factorial](https://en.wikipedia.org/wiki/Factorial) `10 000` times for range of numbers from `1` to `20`
 
+## Usage
+See help page
+```
+python3 main.py --help
+```
+
 ## Example output
 Tests performed on Apple M1 CPU
 ```
